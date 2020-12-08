@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="view" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <TableView fx:id="conocimientosTV" prefHeight="200.0" prefWidth="460.0" BorderPane.alignment="CENTER">
+         <columns>
+            <TableColumn fx:id="denominacionTC" prefWidth="100.0" text="Denominación" />
+            <TableColumn fx:id="nivelTC" prefWidth="100.0" text="Nivel" />
+         </columns>
+         <BorderPane.margin>
+            <Insets bottom="3.0" left="3.0" top="3.0" />
+         </BorderPane.margin>
+      </TableView>
+   </left>
+   <right>
+      <VBox prefHeight="400.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="añadirConocimientoBt" mnemonicParsing="false" onAction="#onActionAñadirConocimiento" prefWidth="130.0" text="Añadir conocimiento">
+               <VBox.margin>
+                  <Insets right="3.0" top="3.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="añadirIdiomaBt" mnemonicParsing="false" onAction="#onActionAñadirIdioma" prefWidth="130.0" text="Añadir idioma">
+               <VBox.margin>
+                  <Insets right="3.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="eliminarBt" mnemonicParsing="false" onAction="#onActionEliminar" prefWidth="130.0" text="Eliminar">
+               <VBox.margin>
+                  <Insets right="3.0" top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+</BorderPane>
